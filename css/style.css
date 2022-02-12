@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.row {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+	flex: 1 0 33%;
+    max-width: 33%;
+    box-sizing: border-box;
+    border: 2px solid #363636;
+    background-color: #999999;
+}
+
+.col p {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 200;
+    display: flex;
+  flex-direction: column;
+}
+
+h1 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.head {
+    text-align: center;
+    border: 2px solid black;
+    width: 40%;
+    padding: 5px;
+    font-size: 22px;
+    margin-top: -2px;
+    letter-spacing: 1px;
+    border-right: none;
+    float: right;
+}
+
+#chick {
+    background-color: #D59898;
+}
+
+#beef {
+    background-color: #C14543;
+    color: white;
+}
+
+#sushi {
+    background-color: #E5D198;
+}
+
+@media only screen and (max-width:768px) {
+    .col {
+        flex: 1 0 100%;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    @media only screen and (min-width:768px) {
+        .col {  
+            flex: 1 0 auto;
+            max-width: 49.5%;
+        }
+        .col:nth-child(3) {
+            flex: 1 0 100%;
+            max-width: 100%;
+            margin-top: 5px;
+        }       
+    }
+}
